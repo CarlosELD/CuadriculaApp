@@ -34,7 +34,6 @@ import com.example.cuadricula.Modelo.Topic
 import com.example.cuadricula.ui.theme.CuadriculaTheme
 
 class MainActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -66,6 +65,7 @@ fun TopicGrid(modifier: Modifier = Modifier) {
         }
     }
 }
+
 
 @Composable
 fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
