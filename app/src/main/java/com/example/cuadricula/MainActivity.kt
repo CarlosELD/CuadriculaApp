@@ -66,7 +66,6 @@ fun TopicGrid(modifier: Modifier = Modifier) {
     }
 }
 
-
 @Composable
 fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
     Card {
