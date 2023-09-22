@@ -73,7 +73,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
         Row {
             Box {
                 Image(
-                    painter = painterResource(id = topic.imageRes),
+                    painter = painterResource(id = topic.picturesres),
                     contentDescription = null,
                     modifier = modifier
                         .size(width = 68.dp, height = 68.dp)
@@ -83,7 +83,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
             }
             Column {
                 Text(
-                    text = stringResource(id = topic.name),
+                    text = stringResource(id = topic.nombres),
                     style = MaterialTheme.typography.bodyMedium,
                     modifier = Modifier.padding(
                         start = dimensionResource(R.dimen.padding_medium),
@@ -100,7 +100,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
                             .padding(start = dimensionResource(R.dimen.padding_medium))
                     )
                     Text(
-                        text = topic.availableCourses.toString(),
+                        text = topic.cuadriexiste.toString(),
                         style = MaterialTheme.typography.labelMedium,
                         modifier = Modifier.padding(start = dimensionResource(R.dimen.padding_small))
                     )
@@ -114,7 +114,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
 @Composable
 fun TopicPreview() {
     CuadriculaTheme {
-        val topic = Topic(R.string.photography, 321, R.drawable.photography)
+        val topic = Topic(R.string.photography, 321, R.drawable.fotografia)
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
