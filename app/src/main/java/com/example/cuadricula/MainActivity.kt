@@ -81,7 +81,6 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
                     contentScale = ContentScale.Crop
                 )
             }
-
             Column {
                 Text(
                     text = stringResource(id = topic.name),
