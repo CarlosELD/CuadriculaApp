@@ -52,6 +52,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
 @Composable
 fun TopicGrid(modifier: Modifier = Modifier) {
     LazyVerticalGrid(
